@@ -6,7 +6,7 @@
 #    By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/25 14:47:58 by tedelin           #+#    #+#              #
-#    Updated: 2023/06/25 22:00:11 by tedelin          ###   ########.fr        #
+#    Updated: 2023/06/26 15:31:30 by tedelin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRC = main.cpp
 HEADER = Array.hpp
 OBJ = $(SRC:.cpp=.o)
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 all: $(NAME)
 
