@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 21:59:37 by tedelin           #+#    #+#             */
-/*   Updated: 2023/06/26 11:17:01 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/06/27 11:29:35 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 # include <iostream>
 
 template <typename T>
-void    my_function(T& elt)
+void    print(const T& elt)
 {
     std::cout << elt << std::endl;    
 }
 
 template <typename T>
-void iter(T* tab, std::size_t size, void (*func)(T& elt))
+void iter(T* tab, size_t size, void (*func)(const T& elt))
 {
-    for (std::size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size; i++)
         func(tab[i]);
 }
 
