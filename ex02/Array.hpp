@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 21:59:31 by tedelin           #+#    #+#             */
-/*   Updated: 2023/06/26 15:25:12 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/06/28 12:10:54 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ class Array
             }
         }
 
-        T& operator[](unsigned int n) {
+        T& operator[](unsigned int n) const {
             if (n < _size)
                 return (this->_array[n]);
             throw InvalidIndexException();
